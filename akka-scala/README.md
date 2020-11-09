@@ -61,7 +61,7 @@ libraryDependencies += "io.swagger" % "swagger-client" % "1.0.0"
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://vgi1o4pkrc.execute-api.us-east-2.amazonaws.com/Prod*
+All URIs are relative to *https://vgi1o4pkrc.execute-api.us-east-2.amazonaws.com/Prod/indicadoreshoy*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
