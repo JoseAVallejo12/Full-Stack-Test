@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  full-stack-test
+
+  Sample SAM Template for full-stack-test
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  IndicadoresFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: indicadores/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Events:
+        IndicadoresApi:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /indicadoreshoy
+            Method: get
+      Environment:
+        Variables:
+          PASWORD: ''
+          DBNAME: ''
+          USER: ''
+          CLUSTER: ''

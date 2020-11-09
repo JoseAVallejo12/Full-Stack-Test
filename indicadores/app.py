@@ -27,7 +27,7 @@ def lambda_handler(event, context):
 
     else:
         res2 = model.prepare_response().get('data')
-        if res2 is True:
+        if res2 is not False:
             response = res2
         else:
             status = 400

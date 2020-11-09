@@ -1,5 +1,10 @@
-# full-stack-test
+# Full-Stack-Test
+<p align="center">
+  <img src="https://img.shields.io/powershellgallery/p/DNS.1.1.1.1?style=for-the-badge">
+  <img src="https://img.shields.io/pypi/pyversions/leocli?color=%23aaa&label=Python&logoColor=%23555&style=for-the-badge">
 
+</p>
+<p align="center"><img src="https://i.imgur.com/Am93k1V.png"></p>
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
 - indicadores - Code for the application's Lambda function.
