@@ -120,7 +120,8 @@ aws cloudformation delete-stack --stack-name full-stack-test
 ## Test api
 ```
 https://vgi1o4pkrc.execute-api.us-east-2.amazonaws.com/Prod/indicadoreshoy
->>>
+>>> CodeStatus 200
+
 {
   "statusCode": 200,
   "body": {
@@ -133,5 +134,16 @@ https://vgi1o4pkrc.execute-api.us-east-2.amazonaws.com/Prod/indicadoreshoy
       }
     }
   }
+}
+
+https://vgi1o4pkrc.execute-api.us-east-2.amazonaws.com/Prod/indicadoreshoy
+>>> CodeStatus 400
+{
+  "statusCode":400,
+  "body":{
+    "message":{
+      "mongo":"data not found en db","api":"One o more call to api fail"
+      }
+   }
 }
 ```
